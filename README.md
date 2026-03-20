@@ -1,2 +1,111 @@
 # github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks
 Educational coloring books for kids – animals, and discovery learning,  and creativity”
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shield Generations Books</title>
+<style>
+body { font-family: 'Segoe UI', Arial; margin:0; background:#0f172a; color:#e5e7eb; }
+header { background:#020617; color:#e5e7eb; padding:25px; text-align:center; border-bottom:2px solid #78350f; }
+header img { max-width:120px; margin-bottom:10px; }
+.container { padding:20px; }
+h2 { color:#f59e0b; margin-top:30px; }
+.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+.card { background:#020617; padding:15px; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,0.5); border:1px solid #78350f; }
+.card img { width:100%; border-radius:10px; }
+.btn { display:inline-block; margin-top:10px; padding:10px; background:#f59e0b; color:black; text-decoration:none; border-radius:6px; font-weight:bold; cursor:pointer; }
+#cart { position:fixed; right:0; top:0; width:260px; height:100%; background:#020617; padding:15px; box-shadow:-3px 0 10px rgba(0,0,0,0.6); overflow:auto; border-left:2px solid #78350f; }
+#cart h3 { color:#f59e0b; }
+footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-top:30px; }
+</style>
+</head>
+<body>
+
+<header>
+<img src="logo.png" alt="Logo">
+<h1>Shield Generations Books</h1>
+<p>Learning Through Generations</p>
+</header>
+
+<div class="container">
+
+<h2>Animal Series</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200">
+<h3>Nocturnal Animals</h3>
+<p>Ages 4–8 • €14.99</p>
+<button class="btn" onclick="addToCart('Nocturnal Animals',14.99)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200">
+<h3>Ocean Life</h3>
+<p>Ages 4–8 • €14.99</p>
+<button class="btn" onclick="addToCart('Ocean Life',14.99)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200">
+<h3>Wild Animals</h3>
+<p>Ages 4–8 • €14.99</p>
+<button class="btn" onclick="addToCart('Wild Animals',14.99)">Add to Cart</button>
+</div>
+
+</div>
+
+<h2>Discovery Series</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200">
+<h3>Transport Through Time</h3>
+<p>Ages 5–10 • €14.99</p>
+<button class="btn" onclick="addToCart('Transport Through Time',14.99)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200">
+<h3>Inventors & Inventions</h3>
+<p>Ages 6–10 • €14.99</p>
+<button class="btn" onclick="addToCart('Inventors & Inventions',14.99)">Add to Cart</button>
+</div>
+
+</div>
+
+</div>
+
+<div id="cart">
+<h3>Your Cart</h3>
+<ul id="cartItems"></ul>
+<p>Total: €<span id="total">0</span></p>
+<a id="paypalBtn" class="btn" href="#" target="_blank">Checkout</a>
+</div>
+
+<footer>
+<p>© 2026 Shield Generations Books</p>
+</footer>
+
+<script>
+let cart = [];
+function addToCart(name, price){ cart.push({name, price}); renderCart(); }
+function renderCart(){
+let list = document.getElementById('cartItems'); list.innerHTML = '';
+let total = 0;
+cart.forEach(item => {
+let li = document.createElement('li');
+li.textContent = item.name + ' €' + item.price;
+list.appendChild(li);
+total += item.price;
+});
+document.getElementById('total').textContent = total.toFixed(2);
+document.getElementById('paypalBtn').href =
+'https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=YOURPAYPAL&amount=' + total + '&currency_code=EUR';
+}
+</script>
+
+</body>
+</html>
