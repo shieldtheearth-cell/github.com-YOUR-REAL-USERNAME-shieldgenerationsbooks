@@ -33,48 +33,50 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
 
 <h2>Animal Series</h2>
 <div class="grid">
-
-<div class="card">
-<img src="https://via.placeholder.com/300x200">
-<h3>Nocturnal Animals</h3>
-<p>Ages 4–8 • €14.99</p>
-<button class="btn" onclick="addToCart('Nocturnal Animals',14.99)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/300x200">
-<h3>Ocean Life</h3>
-<p>Ages 4–8 • €14.99</p>
-<button class="btn" onclick="addToCart('Ocean Life',14.99)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/300x200">
-<h3>Wild Animals</h3>
-<p>Ages 4–8 • €14.99</p>
-<button class="btn" onclick="addToCart('Wild Animals',14.99)">Add to Cart</button>
-</div>
-
-</div>
-
-<h2>Discovery Series</h2>
 <div class="grid">
 
-<div class="card">
-<img src="https://via.placeholder.com/300x200">
-<h3>Transport Through Time</h3>
-<p>Ages 5–10 • €14.99</p>
-<button class="btn" onclick="addToCart('Transport Through Time',14.99)">Add to Cart</button>
-</div>
+  <div class="card">
+    <img src="nocturnal.jpg" alt="Nocturnal Animals">
+    <h3>Nocturnal Animals</h3>
+    <p>€14.99</p>
+  </div>
 
-<div class="card">
-<img src="https://via.placeholder.com/300x200">
-<h3>Inventors & Inventions</h3>
-<p>Ages 6–10 • €14.99</p>
-<button class="btn" onclick="addToCart('Inventors & Inventions',14.99)">Add to Cart</button>
-</div>
+  <div class="card">
+    <img src="ocean.jpg" alt="Ocean Adventures">
+    <h3>Ocean Adventures</h3>
+    <p>€14.99</p>
+  </div>
 
-</div>
+  <div class="card">
+    <img src="wildlife.jpg" alt="Wildlife">
+    <h3>Wildlife</h3>
+    <p>€14.99</p>
+  </div>
+
+  <div class="card">
+    <img src="inventors.jpg" alt="Inventors & Inventions">
+    <h3>Inventors & Inventions</h3>
+    <p>€14.99</p>
+  </div>
+
+  <div class="card">
+    <img src="transport.jpg" alt="Transport Through Time">
+    <h3>Transport Through Time</h3>
+    <p>€14.99</p>
+  </div>
+
+  <div class="card">
+    <img src="world.jpg" alt="Wonders of the World">
+    <h3>Wonders of the World</h3>
+    <p>€14.99</p>
+  </div>
+
+  <div class="card">
+    <img src="farm.jpg" alt="Farm Animals">
+    <h3>Farm Animals</h3>
+    <p>€14.99</p>
+  </div>
+
 
 </div>
 
