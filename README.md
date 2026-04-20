@@ -36,43 +36,43 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
 <div class="grid">
 
   <div class="card">
-    <img src="nocturnal.jpg" alt="Nocturnal Animals">
+    <img src="front cover nocturnal.png">
     <h3>Nocturnal Animals</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="ocean.jpg" alt="Ocean Adventures">
+    <img src="ocean front.png">
     <h3>Ocean Adventures</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="wildlife.jpg" alt="Wildlife">
+    <img src="front cover Wildlife Wonders.png">
     <h3>Wildlife</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="inventors.jpg" alt="Inventors & Inventions">
+    <img src="inventors.jpg.jpg">
     <h3>Inventors & Inventions</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="transport.jpg" alt="Transport Through Time">
+    <img src="transport.jpg.jpg">
     <h3>Transport Through Time</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="world.jpg" alt="Wonders of the World">
+    <img src="world.jpg.jpg">
     <h3>Wonders of the World</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="farm.jpg" alt="Farm Animals">
+    <img src="farm.jpg.jpg">
     <h3>Farm Animals</h3>
     <p>€14.99</p>
   </div>
