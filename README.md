@@ -54,7 +54,7 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
   </div>
 
   <div class="card">
-    <img src="inventors.jpg.jpg">
+    <img src="inventors.jpg">
     <h3>Inventors & Inventions</h3>
     <p>€14.99</p>
   </div>
