@@ -33,7 +33,7 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
 
 <h2>Animal Series</h2>
 <div class="grid">
-<div class="grid">
+
 
   <div class="card">
     <img src="front cover nocturnal.png">
