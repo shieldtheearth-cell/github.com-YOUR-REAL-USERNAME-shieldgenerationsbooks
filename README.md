@@ -1,5 +1,5 @@
 # github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks
-Educational coloring books for kids – animals, and discovery learning,  and creativity”
+Educational coloring books for kids – animals, and discovery learning,  and creativity"
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +24,7 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
 <body>
 
 <header>
-<img src="logo.png" alt="Logo">
+<img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/logo.png" alt="Logo">
 <h1>Shield Generations Books</h1>
 <p>Learning Through Generations</p>
 </header>
@@ -36,43 +36,43 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
 
 
   <div class="card">
-    <img src="front cover nocturnal.png">
+    <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/front%20cover%20nocturnal.png">
     <h3>Nocturnal Animals</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="ocean front.png">
+    <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/ocean%20front.png">
     <h3>Ocean Adventures</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="front cover Wildlife Wonders.png">
+    <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/front%20cover%20Wildlife%20Wonders.png">
     <h3>Wildlife</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="inventors.jpg">
+    <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/inventors.jpg">
     <h3>Inventors & Inventions</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="transport.jpg.jpg">
+    <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/transport.jpg">
     <h3>Transport Through Time</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="world.jpg.jpg">
+    <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/world.jpg">
     <h3>Wonders of the World</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
-    <img src="farm.jpg.jpg">
+    <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/farm.jpg">
     <h3>Farm Animals</h3>
     <p>€14.99</p>
   </div>
