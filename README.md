@@ -37,13 +37,13 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
 
   <div class="card">
     <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/front%20cover%20nocturnal.png">
-    <h3>Nocturnal Animals</h3>
+    <h3>Nocturnal</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
     <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/ocean%20front.png">
-    <h3>Ocean Adventures</h3>
+    <h3>Ocean life</h3>
     <p>€14.99</p>
   </div>
 
@@ -55,7 +55,7 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
 
   <div class="card">
     <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/inventors.jpg">
-    <h3>Inventors & Inventions</h3>
+    <h3>inventions & inventors</h3>
     <p>€14.99</p>
   </div>
 
@@ -67,13 +67,13 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
 
   <div class="card">
     <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/world.jpg">
-    <h3>Wonders of the World</h3>
+    <h3>world of wonders</h3>
     <p>€14.99</p>
   </div>
 
   <div class="card">
     <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/farm.jpg">
-    <h3>Farm Animals</h3>
+    <h3>Farm yard</h3>
     <p>€14.99</p>
   </div>
 
