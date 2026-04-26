@@ -55,7 +55,7 @@ footer { text-align:center; padding:20px; border-top:2px solid #78350f; margin-t
 
   <div class="card">
     <img src="https://github.com/shieldtheearth-cell/github.com-YOUR-REAL-USERNAME-shieldgenerationsbooks/raw/main/inventors.jpg">
-    <h3>inventions & inventors</h3>
+    <h3>inventions-and-inventors.jpg</h3>
     <p>€14.99</p>
   </div>
 
