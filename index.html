@@ -1,195 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shield Generations Books</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shield Generations Books</title>
 
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+<style>
+body {
+  font-family: 'Segoe UI', Arial;
+  margin:0;
+  background:#0f172a;
+  color:#e5e7eb;
+}
 
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-    }
+.header {
+  position: relative;
+  text-align: center;
+}
 
-    header {
-      position: relative;
-      height: 300px;
-      background: url('banner.png') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+.header img.banner {
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  opacity:0.8;
+}
 
-    header::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.6);
-    }
+.header-content {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
 
-    header .hero {
-      position: relative;
-      z-index: 1;
-    }
+.header-content img {
+  width:80px;
+}
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
+.container { padding:20px; }
 
-    header p {
-      color: #cbd5f5;
-    }
+h2 {
+  color:#f59e0b;
+  margin-top:30px;
+}
 
-    .layout {
-      display: flex;
-    }
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
 
-    .main {
-      flex: 1;
-      padding: 20px;
-    }
+.card {
+  background:#020617;
+  padding:15px;
+  border-radius:14px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.5);
+  border:1px solid #78350f;
+}
 
-    h2 {
-      color: #f59e0b;
-      margin-bottom: 20px;
-    }
+.card img {
+  width:100%;
+  border-radius:10px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
+.btn {
+  display:inline-block;
+  margin-top:10px;
+  padding:10px;
+  background:#f59e0b;
+  color:black;
+  border:none;
+  border-radius:6px;
+  font-weight:bold;
+  cursor:pointer;
+}
 
-    .card {
-      background: #020617;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid #78350f;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
-      display: flex;
-      flex-direction: column;
-    }
+#cart {
+  position:fixed;
+  right:0;
+  top:0;
+  width:260px;
+  height:100%;
+  background:#020617;
+  padding:15px;
+  box-shadow:-3px 0 10px rgba(0,0,0,0.6);
+  overflow:auto;
+  border-left:2px solid #78350f;
+}
 
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      background: #111;
-    }
-
-    .card-content {
-      padding: 15px;
-      flex: 1;
-    }
-
-    .price {
-      margin: 10px 0;
-      color: #94a3b8;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px;
-      background: #f59e0b;
-      color: black;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* CART FIX */
-    .cart {
-      width: 260px;
-      background: #020617;
-      border-left: 2px solid #78350f;
-      padding: 20px;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-    }
-
-    .cart h3 {
-      margin-bottom: 10px;
-    }
-
-    .checkout {
-      margin-top: 20px;
-      width: 100%;
-      text-align: center;
-      display: block;
-      padding: 10px;
-      background: #f59e0b;
-      color: black;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* MOBILE FIX */
-    @media (max-width: 900px) {
-      .layout {
-        flex-direction: column;
-      }
-
-      .cart {
-        width: 100%;
-        height: auto;
-        position: relative;
-        border-left: none;
-        border-top: 2px solid #78350f;
-      }
-    }
-
-  </style>
+footer {
+  text-align:center;
+  padding:20px;
+  border-top:2px solid #78350f;
+  margin-top:30px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <div class="hero">
+<div class="header">
+  <img src="banner.png" class="banner">
+
+  <div class="header-content">
+    <img src="logo.png">
     <h1>Shield Generations Books</h1>
     <p>Learning Through Generations</p>
   </div>
-</header>
+</div>
 
-<div class="layout">
+<div class="container">
 
-  <div class="main">
-    <h2>Animal Series</h2>
+<h2>Animal Series</h2>
+<div class="grid">
 
-    <div class="grid">
+<div class="card">
+<img src="nocturnal.jpg">
+<h3>Nocturnal</h3>
+<p>€14.99</p>
+<button class="btn" onclick="addToCart('Nocturnal',14.99)">Add to Cart</button>
+</div>
 
-      <div class="card">
-        <img src="nocturnal.jpg" alt="Nocturnal">
-        <div class="card-content">
-          <h3>Nocturnal Creatures</h3>
-          <div class="price">€14.99</div>
-          <a href="#" class="btn">Add to Cart</a>
-        </div>
-      </div>
+<div class="card">
+<img src="ocean-life.jpg">
+<h3>Ocean Life</h3>
+<p>€14.99</p>
+<button class="btn" onclick="addToCart('Ocean Life',14.99)">Add to Cart</button>
+</div>
 
-      <div class="card">
-        <img src="ocean-life.jpg" alt="Ocean">
-        <div class="card-content">
-          <h3>Ocean Adventures</h3>
-          <div class="price">€14.99</div>
-          <a href="#" class="btn">Add to Cart</a>
-        </div>
-      </div>
+<div class="card">
+<img src="wildlife.jpg">
+<h3>Wildlife</h3>
+<p>€14.99</p>
+<button class="btn" onclick="addToCart('Wildlife',14.99)">Add to Cart</button>
+</div>
 
-      <div class="card">
-        <img src="wildlife.jpg" alt="Wildlife">
-        <div class="card-content">
-          <h3>Wildlife</h3>
-          <div class="price">€14.99</div>
-          <a href="#" class="btn">Add to Cart</a>
-        </div>
-      <div class="card">
-<img src="farm yard.jpg">
+<div class="card">
+<img src="farm-yard.jpg">
 <h3>Farm Yard</h3>
 <p>€14.99</p>
 <button class="btn" onclick="addToCart('Farm Yard',14.99)">Add to Cart</button>
@@ -201,41 +147,18 @@
 <div class="grid">
 
 <div class="card">
-<img src="Transport through time.jpg">
+<img src="transport-through-time.jpg">
 <h3>Transport Through Time</h3>
 <p>€14.99</p>
 <button class="btn" onclick="addToCart('Transport Through Time',14.99)">Add to Cart</button>
 </div>
 
 <div class="card">
-<img src="inventions & invertors.jpg">
+<img src="inventions-and-inventors.jpg">
 <h3>Inventors & Inventions</h3>
 <p>€14.99</p>
 <button class="btn" onclick="addToCart('Inventors & Inventions',14.99)">Add to Cart</button>
 </div>
 
 <div class="card">
-<img src="wonders of the world .jpg">
-<h3>Wonders of the World</h3>
-<p>€14.99</p>
-<button class="btn" onclick="addToCart('Wonders of the World',14.99)">Add to Cart</button>
-</div>
-
-</div>
-
-</div>
-
-    </div>
-  </div>
-
-  <div class="cart">
-    <h3>Your Cart</h3>
-    <p>Total: €0</p>
-    <a href="#" class="checkout">Checkout</a>
-  </div>
-
-</div>
-
-</body>
-</html>
-
+<im
