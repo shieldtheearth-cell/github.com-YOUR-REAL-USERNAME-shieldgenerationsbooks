@@ -76,6 +76,97 @@ body {
 
 <div class="grid">
 
+
+
+</div>
+
+<!-- CART -->
+<div id="cart">
+<h3>Cart</h3>
+<ul id="cartItems"></ul>
+<p>Total €<span id="total">0</span></p>
+</div><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shield Generations Books</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin:0;
+  background:#0f172a;
+  color:#fff;
+}
+
+/* HEADER */
+.header img {
+  width:100%;
+  max-height:300px;
+  object-fit:cover;
+}
+
+/* LAYOUT */
+.container { padding:20px; }
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:#020617;
+  padding:15px;
+  border-radius:10px;
+}
+
+/* ✅ FIX IMAGE CUTTING */
+.card img {
+  width:100%;
+  height:auto;   /* THIS FIXES HALF IMAGE ISSUE */
+  border-radius:10px;
+}
+
+.btn {
+  background:#f59e0b;
+  padding:10px;
+  border:none;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+/* CART */
+#cart {
+  position:fixed;
+  right:0;
+  top:0;
+  width:250px;
+  height:100%;
+  background:#020617;
+  padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <img src="banner.png">
+</div>
+
+<div class="container">
+
+<h2>Books</h2>
+
+<div class="grid">
+
+</div>
+
+<!-- CART --><div class="grid">
+
 <div class="card">
 <img src="nocturnal.jpg">
 <h3>Nocturnal</h3>
@@ -96,49 +187,69 @@ body {
 <p>€14.99</p>
 <button class="btn" onclick="addToCart('Wildlife',14.99)">Add</button>
 </div>
+
 <div class="card">
 <img src="farm yard.jpg">
 <h3>Farm Yard</h3>
 <p>€14.99</p>
-<button class="btn" onclick="addToCart('Farm Yard',14.99)">Add to Cart</button>
+<button class="btn" onclick="addToCart('Farm Yard',14.99)">Add</button>
 </div>
-<div class="card">
-
-</div>
-<h2>Discovery Series</h2>
-<div class="grid">
 
 <div class="card">
 <img src="Transport through time.jpg">
 <h3>Transport Through Time</h3>
 <p>€14.99</p>
-<button class="btn" onclick="addToCart('Transport Through Time',14.99)">Add to Cart</button>
+<button class="btn" onclick="addToCart('Transport',14.99)">Add</button>
 </div>
 
 <div class="card">
 <img src="inventions & invertors.jpg">
 <h3>Inventors & Inventions</h3>
 <p>€14.99</p>
-<button class="btn" onclick="addToCart('Inventors & Inventions',14.99)">Add to Cart</button>
+<button class="btn" onclick="addToCart('Inventors',14.99)">Add</button>
 </div>
 
 <div class="card">
 <img src="wonders of the world .jpg">
 <h3>Wonders of the World</h3>
 <p>€14.99</p>
-<button class="btn" onclick="addToCart('Wonders of the World',14.99)">Add to Cart</button>
+<button class="btn" onclick="addToCart('Wonders',14.99)">Add</button>
 </div>
 
 </div>
-
-</div>
-
-<!-- CART -->
 <div id="cart">
 <h3>Cart</h3>
 <ul id="cartItems"></ul>
 <p>Total €<span id="total">0</span></p>
 </div>
+
+<script>
+let cart = [];
+
+function addToCart(name, price){
+  cart.push({name, price});
+  updateCart();
+}
+
+function updateCart(){
+  let list = document.getElementById("cartItems");
+  list.innerHTML = "";
+
+  let total = 0;
+
+  cart.forEach(item => {
+    let li = document.createElement("li");
+    li.textContent = item.name + " €" + item.price;
+    list.appendChild(li);
+    total += item.price;
+  });
+
+  document.getElementById("total").textContent = total.toFixed(2);
+}
+</script>
+
+</body>
+</html>
 
 <script>
 let cart = [];
