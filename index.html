@@ -24,9 +24,10 @@ body{
   display:block;
 }
 
-/* LAYOUT */
+/* PAGE LAYOUT */
 .wrapper{
   display:flex;
+  align-items:flex-start;
 }
 
 /* SHOP */
@@ -35,7 +36,7 @@ body{
   padding:20px;
 }
 
-h2{
+.container h2{
   margin-bottom:20px;
 }
 
@@ -83,6 +84,7 @@ h2{
   width:280px;
   background:#020617;
   padding:20px;
+  min-height:100vh;
 }
 
 #cart h3{
@@ -108,7 +110,7 @@ h2{
 
   #cart{
     width:100%;
-    order:-1;
+    min-height:auto;
   }
 
   .grid{
@@ -122,7 +124,7 @@ h2{
 
 <!-- HEADER -->
 <div class="header">
-  <img src="banner.png" alt="Banner">
+  <img src="banner.png" alt="Shield Generations Books Banner">
 </div>
 
 <div class="wrapper">
@@ -198,10 +200,9 @@ h2{
 <br>
 
 <a
-id="paypalBtn"
-class="btn"
 href="https://paypal.me/CharmaineToscano"
-target="_blank">
+target="_blank"
+class="btn">
 Checkout with PayPal
 </a>
 
@@ -209,8 +210,7 @@ Checkout with PayPal
 
 <p style="font-size:14px; line-height:1.5;">
 Payment sent to:<br>
-Charmaine Toscano<br>
-PayPal Account
+Charmaine Toscano
 </p>
 
 </div>
